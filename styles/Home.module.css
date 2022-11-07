@@ -3,13 +3,43 @@
 }
 
 .main {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 16px;
+}
+
+.courses {
+  padding: 66px 16px 80px 16px;
+}
+
+.courses__container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.courses__check {
+  font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 10px;
+  padding: 28px 24px 29px 32px;
+  margin: 0 0 40px 0;
 }
 
 .footer {
@@ -73,36 +103,6 @@
   max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -116,7 +116,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
   .footer {
     border-color: #222;
   }
