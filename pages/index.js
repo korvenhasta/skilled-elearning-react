@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import CourseCard from '../components/CourseCard/CourseCard';
 
 export default function Home() {
   return (
@@ -12,6 +13,67 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+        <header className={styles.header}>
+          <nav class="navigation">
+              <ul class="navigation__menu-list">
+                  <li class="navigation__list-item">
+                      <img src="./assets/logo-dark.svg" alt="company logo" class="navigation__logo">
+                  </li>
+                  <li class="navigation__list-item">
+                      <button class="button button_header">Get Started</button>
+                  </li>
+              </ul>
+          </nav>
+        </header>
+
+        <section className={styles.courses}>
+          <div className={styles.courses__container}>
+            <h3 className={styles.courses__check}>Check out our most popular courses!</h3>
+
+            <CourseCard 
+              // cardImg="/public/icon-animation.svg" 
+              cardAlt="icon for an animation course"
+              cardTitle="Animation" 
+              cardContent="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+              cardLink="#"
+              cardLinkName="Get Started"
+              />
+            <CourseCard 
+              // cardImg="../public/icon-design.svg" 
+              cardAlt="icon for a design course"
+              cardTitle="Design" 
+              cardContent="Create beautiful, usable interfaces to help shape the future of how the web looks."
+              cardLink="#"
+              cardLinkName="Get Started"
+            />
+            <CourseCard 
+              // cardImg="../public/icon-photography.svg" 
+              cardAlt="icon for a photography course"
+              cardTitle="Photography" 
+              cardContent="Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos."
+              cardLink="#"
+              cardLinkName="Get Started"
+            />
+            <CourseCard 
+              // cardImg="../public/icon-crypto.svg" 
+              cardAlt="icon for a crypto course"
+              cardTitle="Crypto" 
+              cardContent="All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course."
+              cardLink="#"
+              cardLinkName="Get Started"
+            />
+            <CourseCard 
+              // cardImg="../public/icon-business.svg" 
+              cardAlt="icon for a business course"
+              cardTitle="Business" 
+              cardContent="A step-by-step playbook to help you start, scale, and sustain your business without outside investment."
+              cardLink="#"
+              cardLinkName="Get Started"
+            />
+          </div>
+
+        </section>
         
       </main>
 
