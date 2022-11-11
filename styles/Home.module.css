@@ -18,6 +18,46 @@
   padding: 16px;
 }
 
+.getStarted {
+  padding: 22px 16px 0 16px;
+}
+
+.getStarted_container {
+  width: 100%;
+  margin: 0 0 46px 0;
+}
+
+.getStarted__title {
+  font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 50px;
+  color: #13183F;
+  margin: 0 0 26px 0;
+}
+
+.getStarted__subtitle {
+  font-family: 'Plus Jakarta Sans Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869A;
+  margin: 0 0 24px 0;
+}
+
+.button_getStarted {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  color: #FFFFFF;
+  border-radius: 31.5px;
+  width: 167px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .courses {
   padding: 66px 16px 80px 16px;
 }
@@ -42,13 +82,45 @@
   margin: 0 0 40px 0;
 }
 
-.code {
+/* .code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+} */
+
+@media screen and (min-width: 768px) {
+  .getStarted {
+      padding: 76px 0 0 40px;
+  }
+  .getStarted__container {
+    width: 55%;
+    margin: 0 0 186px 0;
+  }
+  .getStarted__title{
+    margin: 0 0 25px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getStarted {
+      padding: 148px 0 0 165px;
+  }
+  .getStarted__container {
+    width: 40%;
+    margin: 0 0 186px 0;
+  }
+  .getStarted__title{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    margin: 0 0 29px 0;
+  }
+  .getStarted__subtitle {
+    margin: 0 0 40px 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

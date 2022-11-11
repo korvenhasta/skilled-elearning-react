@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import CourseCard from '../components/CourseCard/CourseCard';
 import MenuNavigation from '../components/MenuNavigation/MenuNavigation';
+import Button from '../components/Button/Button';
 
 export default function Home() {
   return (
@@ -25,6 +26,16 @@ export default function Home() {
             navButton="Get Started"
           /> */}
         </header>
+
+        <section className={styles.getStarted}>
+          <div className={styles.getStarted__container}>
+            <h1 className={styles.getStarted__title}>Maximize skill, minimize&nbsp;budget</h1>
+            <h2 className={styles.getStarted__subtitle}>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</h2>
+            <Button
+              buttonTitle="Get Started"
+            />
+          </div>
+        </section>
 
         <section className={styles.courses}>
           <div className={styles.courses__container}>
