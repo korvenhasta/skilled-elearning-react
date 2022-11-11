@@ -16,11 +16,69 @@
     margin: 0;
 }
 
+.courses__icon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -24px;
+    left: 28px;
+    margin: 0 0 24px 0;
+}
+
+.courses__title {
+    font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    margin: 56px 0 16px 28px;
+}
+
+.courses__about {
+    font-family: 'Plus Jakarta Sans Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+    margin: 0 29px 24px 28px;
+}
+
+.courses__link {
+    font-family: 'Plus Jakarta Sans Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    text-decoration: none;
+    margin: 0 0 32px 28px;
+}
+
+.courses__link:hover {
+    color: #FFA7C3;
+}
+
 @media screen and (min-width: 768px) {
     .course {
         width: 48%;
         height: 259px;
         margin: 0 0 56px 0;
+    }
+    .courses__icon {
+        top: -24px;
+        left: 32px;
+    }
+    .courses__title {
+        margin: 56px 0 16px 32px;
+    }
+    .courses__about {
+        height: 80px;
+        margin: 0 22px 24px 32px;
+    }
+    .courses__link {
+        margin: 0 0 32px 32px;
     }
 }
 
@@ -36,10 +94,24 @@
         height: 324px;
         margin: 0 0 80px 0;
     }
+    .courses__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 64px 0 24px 32px; 
+    }
+    .courses__about {
+        height: 106px;
+        margin: 0 32px 24px 32px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .courses__link {
+        margin: 0 0 40px 32px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    .course {
+    .course:last-of-type {
         margin: 0 0 80px 0;
     }
 }

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import CourseCard from '../components/CourseCard/CourseCard';
+import MenuNavigation from '../components/MenuNavigation/MenuNavigation';
 
 export default function Home() {
   return (
@@ -10,21 +11,19 @@ export default function Home() {
         <title>Skilled Elearning</title>
         <meta name="description" content="Online courses" />
         <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet"></link>
       </Head>
 
       <main className={styles.main}>
 
         <header className={styles.header}>
-          <nav class="navigation">
-              <ul class="navigation__menu-list">
-                  <li class="navigation__list-item">
-                      <img src="./assets/logo-dark.svg" alt="company logo" class="navigation__logo">
-                  </li>
-                  <li class="navigation__list-item">
-                      <button class="button button_header">Get Started</button>
-                  </li>
-              </ul>
-          </nav>
+          {/* <MenuNavigation 
+            navImg="/logo-dark.svg"
+            navAlt="company logo"
+            navButton="Get Started"
+          /> */}
         </header>
 
         <section className={styles.courses}>
@@ -32,7 +31,7 @@ export default function Home() {
             <h3 className={styles.courses__check}>Check out our most popular courses!</h3>
 
             <CourseCard 
-              // cardImg="/public/icon-animation.svg" 
+              cardImg="/public/icon-animation.svg" 
               cardAlt="icon for an animation course"
               cardTitle="Animation" 
               cardContent="Learn the latest animation techniques to create stunning motion design and captivate your audience."
