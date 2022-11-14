@@ -31,8 +31,10 @@ export default function Home() {
             <h1 className={styles.getStarted__title}>Maximize skill, minimize&nbsp;budget</h1>
             <h2 className={styles.getStarted__subtitle}>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</h2>
             <Button
-              buttonTitle="Get Started"
-            />
+              variant="button_page"
+              >
+              Get Started
+            </Button>
           </div>
         </section>
 

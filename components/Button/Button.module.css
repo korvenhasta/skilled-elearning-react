@@ -3,4 +3,56 @@
     border-radius: 28px;
     font-family: 'Plus Jakarta Sans Medium', sans-serif;
     font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Variants */
+
+/* Header */
+.button_header {
+    background: #13183F;
+    color: #FFFFFF;
+    width: 140px;
+    height: 48px;
+    line-height: 28px;
+}
+
+.button_header:hover {
+    background: #666CA3;
+}
+
+/* Page */
+.button_page {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: #FFFFFF;
+    border-radius: 31.5px;
+    width: 167px;
+    height: 56px;
+    line-height: 26px;
+}
+
+.button_page:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
+}
+
+@media screen and (min-width: 1440px) {
+    .button_page {
+        height: 63px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* Footer */
+.button_footer {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    color: #FFFFFF;
+    width: 140px;
+    height: 48px;
+    line-height: 28px;
+}
+
+.button_footer:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
