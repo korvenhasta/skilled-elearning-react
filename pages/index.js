@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
         <header className={styles.header}>
           {/* <MenuNavigation 
             navImg="/logo-dark.svg"
@@ -42,7 +41,7 @@ export default function Home() {
             <h3 className={styles.courses__check}>Check out our most popular courses!</h3>
 
             <CourseCard 
-              cardImg="/public/icon-animation.svg" 
+              cardImg="icon-animation.svg" 
               cardAlt="icon for an animation course"
               cardTitle="Animation" 
               cardContent="Learn the latest animation techniques to create stunning motion design and captivate your audience."
@@ -50,7 +49,7 @@ export default function Home() {
               cardLinkName="Get Started"
               />
             <CourseCard 
-              // cardImg="../public/icon-design.svg" 
+              cardImg="icon-design.svg" 
               cardAlt="icon for a design course"
               cardTitle="Design" 
               cardContent="Create beautiful, usable interfaces to help shape the future of how the web looks."
@@ -58,7 +57,7 @@ export default function Home() {
               cardLinkName="Get Started"
             />
             <CourseCard 
-              // cardImg="../public/icon-photography.svg" 
+              cardImg="icon-photography.svg" 
               cardAlt="icon for a photography course"
               cardTitle="Photography" 
               cardContent="Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos."
@@ -66,7 +65,7 @@ export default function Home() {
               cardLinkName="Get Started"
             />
             <CourseCard 
-              // cardImg="../public/icon-crypto.svg" 
+              cardImg="icon-crypto.svg" 
               cardAlt="icon for a crypto course"
               cardTitle="Crypto" 
               cardContent="All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course."
@@ -74,7 +73,7 @@ export default function Home() {
               cardLinkName="Get Started"
             />
             <CourseCard 
-              // cardImg="../public/icon-business.svg" 
+              cardImg="icon-business.svg" 
               cardAlt="icon for a business course"
               cardTitle="Business" 
               cardContent="A step-by-step playbook to help you start, scale, and sustain your business without outside investment."

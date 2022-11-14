@@ -58,6 +58,10 @@
   line-height: 26px;
 }
 
+.button_getStarted:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
+}
+
 .courses {
   padding: 66px 16px 80px 16px;
 }
@@ -120,6 +124,11 @@
   }
   .getStarted__subtitle {
     margin: 0 0 40px 0;
+  }
+  .button_getStarted {
+    height: 63px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
