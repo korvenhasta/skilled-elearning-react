@@ -1,6 +1,6 @@
-.container {
+/* .container {
   padding: 0 2rem;
-}
+} */
 
 .main {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -15,6 +15,9 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 16px;
 }
 

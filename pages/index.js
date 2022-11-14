@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import CourseCard from '../components/CourseCard/CourseCard';
-import MenuNavigation from '../components/MenuNavigation/MenuNavigation';
+import Logo from '../components/Logo/Logo'
 import Button from '../components/Button/Button';
 
 export default function Home() {
@@ -19,11 +19,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <header className={styles.header}>
-          {/* <MenuNavigation 
-            navImg="/logo-dark.svg"
-            navAlt="company logo"
-            navButton="Get Started"
-          /> */}
+          <Logo src="logo-dark.svg"></Logo>
+          <Button
+              variant="button_header"
+              >
+              Get Started
+            </Button>
         </header>
 
         <section className={styles.getStarted}>
