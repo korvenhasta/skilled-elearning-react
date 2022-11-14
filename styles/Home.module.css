@@ -14,13 +14,6 @@
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-}
-
 .getStarted {
   padding: 22px 16px 0 16px;
 }

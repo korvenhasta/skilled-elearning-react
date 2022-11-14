@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
+import Header from '../components/Header/Header'
 import CourseCard from '../components/CourseCard/CourseCard';
 import Logo from '../components/Logo/Logo'
 import Button from '../components/Button/Button';
@@ -18,14 +19,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <header className={styles.header}>
+        <Header>
           <Logo src="logo-dark.svg"></Logo>
-          <Button
-              variant="button_header"
-              >
-              Get Started
+            <Button
+                variant="button_header"
+                >
+                Get Started
             </Button>
-        </header>
+        </Header>
 
         <section className={styles.getStarted}>
           <div className={styles.getStarted__container}>
