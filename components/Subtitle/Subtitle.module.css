@@ -1,0 +1,15 @@
+.subtitle {
+    font-family: 'Plus Jakarta Sans Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+    margin: 0 0 24px 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .subtitle {
+        margin: 0 0 40px 0;
+    }
+}

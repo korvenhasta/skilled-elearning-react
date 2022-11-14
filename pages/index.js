@@ -1,10 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
-import Header from '../components/Header/Header'
+import Header from '../components/Header/Header';
+import PageTitle from '../components/Title/Title';
 import CourseCard from '../components/CourseCard/CourseCard';
 import Logo from '../components/Logo/Logo'
 import Button from '../components/Button/Button';
+import GetStarted__Section from '../components/GetStarted__Section/GetStarted__Section';
+import GetStarted__container from '../components/GetStarted__container/GetStarted__container';
+import Title from '../components/Title/Title';
+import Subtitle from '../components/Subtitle/Subtitle';
 
 export default function Home() {
   return (
@@ -21,24 +26,26 @@ export default function Home() {
       <main className={styles.main}>
         <Header>
           <Logo src="logo-dark.svg"></Logo>
-            <Button
-                variant="button_header"
-                >
+            <Button variant="button_header">
                 Get Started
             </Button>
         </Header>
 
-        <section className={styles.getStarted}>
-          <div className={styles.getStarted__container}>
-            <h1 className={styles.getStarted__title}>Maximize skill, minimize&nbsp;budget</h1>
-            <h2 className={styles.getStarted__subtitle}>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</h2>
+        <GetStarted__Section>
+          <GetStarted__container>
+            <Title>
+              Maximize skill, minimize&nbsp;budget
+            </Title>
+            <Subtitle>
+              Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
+            </Subtitle>
             <Button
               variant="button_page"
               >
               Get Started
             </Button>
-          </div>
-        </section>
+          </GetStarted__container>
+        </GetStarted__Section>
 
         <section className={styles.courses}>
           <div className={styles.courses__container}>

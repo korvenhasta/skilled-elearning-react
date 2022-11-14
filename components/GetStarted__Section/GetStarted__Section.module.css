@@ -1,0 +1,15 @@
+.getStarted__Section {
+    padding: 22px 16px 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .getStarted__Section {
+        padding: 76px 0 0 40px;
+    }
+}
+  
+  @media screen and (min-width: 1440px) {
+    .getStarted__Section {
+        padding: 148px 0 0 165px;
+    }
+}
